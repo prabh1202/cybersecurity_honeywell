@@ -98,3 +98,80 @@
 - **Definition**: Boundaries define the limits of network segments or domains, often established by routers.
 - **Security**: Implementing boundaries helps contain broadcast domains and enforce security policies, controlling access between different parts of the network.
 
+
+# Hierarchical Network Design (HND)
+
+## 1. Hierarchical Network Design
+
+### Overview
+- **Definition**: Hierarchical Network Design is an approach to network design that organizes the network into layers or tiers, each serving a specific function. This structured approach improves the scalability, manageability, and performance of the network.
+- **Layers in HND**:
+  - **Core Layer**: The backbone of the network, responsible for fast and reliable data transport across the network. It connects all the major nodes and facilitates high-speed data transfer.
+  - **Distribution Layer**: Serves as an intermediary between the Core and Access layers, providing routing, filtering, and network policy enforcement. It manages traffic, ensuring that data is efficiently routed to its destination.
+  - **Access Layer**: The point where end devices like computers, printers, and IP phones connect to the network. It provides connectivity to the end users.
+
+### Physical and Logical Address
+
+- **Physical Address (MAC Address)**:
+  - **Definition**: The Media Access Control (MAC) address is a unique identifier assigned to network interfaces for communications at the data link layer of a network segment.
+  - **Format**: A MAC address is a 48-bit number typically represented as 12 hexadecimal digits (e.g., 00:1A:2B:3C:4D:5E).
+  - **Use Case**: Used within a local network for communication between devices. It is crucial for the functioning of Ethernet and Wi-Fi networks.
+  
+- **Logical Address (IP Address)**:
+  - **Definition**: An IP address is a logical identifier for a device on a network, assigned at the network layer (Layer 3) of the OSI model. It is used to route data between devices across networks.
+  - **IPv4 Format**: A 32-bit number typically written in decimal format as four octets (e.g., 192.168.1.1).
+  - **IPv6 Format**: A 128-bit number written in hexadecimal format (e.g., 2001:0db8:85a3::8a2e:0370:7334).
+  - **Use Case**: IP addresses are used to identify devices on a network and route traffic to the correct destination.
+
+## 2. Benefits of Hierarchical Network Design (HND)
+
+### Scalability
+- **Definition**: HND allows for easy expansion of the network by adding new layers or expanding existing ones without disrupting the overall network. This structured approach facilitates growth and adaptation to increasing network demands.
+
+### Manageability
+- **Definition**: With clearly defined layers, managing and troubleshooting the network becomes more straightforward. Each layer has specific functions, making it easier to isolate and address issues within the network.
+- **Centralized Control**: The distribution layer allows centralized management of security policies, routing updates, and VLAN configurations.
+
+### Performance
+- **Improved Efficiency**: By segmenting the network into layers, data can be routed more efficiently, reducing latency and increasing the overall performance of the network.
+- **Load Balancing**: Traffic is distributed evenly across the network, preventing bottlenecks and ensuring consistent performance.
+
+### Redundancy and Fault Tolerance
+- **Definition**: The hierarchical design supports redundancy, with multiple paths for data to travel, ensuring network availability even if one path fails. This fault tolerance minimizes downtime and maintains network reliability.
+
+### Security
+- **Enhanced Security**: Security policies can be enforced more effectively at the distribution layer, where traffic filtering, access control lists (ACLs), and firewall rules can be applied. This helps in securing the network against unauthorized access and threats.
+
+### Viewing Network Information on Your Device
+
+- **Using `ipconfig` (Windows)**:
+  - **Purpose**: The `ipconfig` command displays all current TCP/IP network configuration values and refreshes DHCP and DNS settings.
+  - **Basic Command**: 
+    ```bash
+    ipconfig
+    ```
+    - **Output**: Displays IP addresses, subnet masks, and default gateways for all network interfaces.
+  
+  - **Detailed View**:
+    ```bash
+    ipconfig /all
+    ```
+    - **Output**: Provides detailed information including MAC addresses, DNS servers, DHCP status, and lease information.
+
+- **Other Useful Commands**:
+  - **`ping`**: Tests connectivity to another network device or server.
+    ```bash
+    ping google.com
+    ```
+  - **`tracert` (Windows) / `traceroute` (Linux/Mac)**: Traces the path packets take to reach a destination.
+    ```bash
+    tracert google.com
+    ```
+  - **`netstat`**: Displays active connections, listening ports, and network statistics.
+    ```bash
+    netstat
+    ```
+  - **`nslookup`**: Queries DNS to obtain the domain name or IP address mapping.
+    ```bash
+    nslookup google.com
+    ```

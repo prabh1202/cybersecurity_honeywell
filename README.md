@@ -1,9 +1,3 @@
-Here’s a detailed set of notes for each topic you mentioned, which you can include in your `README.md` file:
-
----
-
-# Detailed Notes on Reliable Networks: Network Architecture
-
 ## Network Segmentation
 
 ### Broadcast Domains

@@ -175,3 +175,136 @@
     ```bash
     nslookup google.com
     ```
+
+
+###Assignement QUestion and Answers
+
+---
+
+# Networking and Security Concepts
+
+## Table of Contents
+
+1. [Incident Analysis](#incident-analysis)
+2. [Types of Malware](#types-of-malware)
+3. [Network Security](#network-security)
+4. [Networking Basics](#networking-basics)
+5. [Client-Server Architecture](#client-server-architecture)
+6. [Network Media and Installation](#network-media-and-installation)
+7. [Protocol Models](#protocol-models)
+8. [Addressing and Communication](#addressing-and-communication)
+9. [Virtualization](#virtualization)
+
+---
+
+## Incident Analysis
+
+### What Was Taken?
+In a typical cybersecurity incident, attackers might steal sensitive information such as personal data, financial information, intellectual property, or credentials. The specifics would depend on the nature of the attack.
+
+### What Exploit Did the Attackers Use?
+Attackers may use various exploits such as:
+
+- **Phishing**: Deceptive emails to steal credentials.
+- **SQL Injection**: Exploiting vulnerabilities in web applications to access databases.
+- **Buffer Overflow**: Overwriting memory to execute malicious code.
+- **Ransomware**: Encrypting files and demanding a ransom.
+
+### What Action Could Be Taken to Prevent the Breach from Occurring Again in the Future?
+- **Update and Patch Systems Regularly**: Ensure all software is up-to-date.
+- **Implement Strong Access Controls**: Use multi-factor authentication and least privilege principles.
+- **Conduct Regular Security Training**: Educate employees about phishing and other threats.
+- **Deploy Firewalls and Intrusion Detection Systems**: Monitor and protect network traffic.
+- **Backup Data Regularly**: Ensure backups are secure and tested.
+
+## Types of Malware
+
+### Compare Virus, Trojan Horse, and Worms
+
+- **Virus**: A type of malware that attaches itself to a legitimate program or file. It spreads when the infected program is executed, potentially corrupting or modifying files.
+- **Trojan Horse**: Malware disguised as legitimate software. It does not self-replicate but can allow unauthorized access to the system.
+- **Worm**: Malware that self-replicates and spreads across networks. Unlike viruses, worms do not need to attach themselves to other programs.
+
+## Network Security
+
+### Compare Man-in-the-Middle and Man-in-the-Mobile
+
+- **Man-in-the-Middle (MitM)**: An attacker intercepts and possibly alters communication between two parties without their knowledge. Common in network communications.
+- **Man-in-the-Mobile (MitM)**: A type of MitM attack specific to mobile devices where the attacker intercepts communications between mobile apps or services.
+
+## Networking Basics
+
+### How Can a Computer Host a Client or Server?
+- **Client**: A computer running client software that requests services or resources from a server.
+- **Server**: A computer running server software that provides services or resources to clients.
+
+### How Can a Host Be Both?
+A computer can act as both a client and a server depending on the application. For example, it might serve files to other computers (server role) while also accessing files from other servers (client role).
+
+### What is a Server?
+A server is a computer or software that provides services, resources, or data to other computers, known as clients, over a network.
+
+### What is a Client?
+A client is a computer or software that requests services or resources from a server.
+
+### How Do Client and Server Communicate?
+Clients and servers communicate over a network using standardized protocols such as HTTP, FTP, or TCP/IP. The client sends a request to the server, and the server responds with the requested data or service.
+
+## Network Media and Installation
+
+### What is the Maximum Distance That the Media Can Successfully Carry a Signal?
+The maximum distance depends on the type of media:
+- **Ethernet (Twisted Pair)**: Typically up to 100 meters for Cat5e/Cat6 cables.
+- **Fiber Optic**: Can range from a few kilometers to over 100 kilometers, depending on the type and quality.
+
+### What is the Environment in Which the Media Will Be Installed?
+Factors include:
+- **Physical Environment**: Indoor, outdoor, hazardous areas.
+- **Environmental Conditions**: Temperature, humidity, and potential interference.
+
+### What Amount of Data and What Speed Must It Be Transmitted?
+This depends on the application:
+- **Data Amount**: File sizes, application data.
+- **Speed**: Bandwidth requirements, often measured in Mbps or Gbps.
+
+### What is the Cost of Media and Installation?
+Costs vary based on:
+- **Type of Media**: Copper cables are generally cheaper than fiber optics.
+- **Installation Complexity**: Costs for labor, equipment, and any necessary infrastructure.
+
+## Protocol Models
+
+### Difference Between TCP/IP and OSI Model
+- **TCP/IP Model**: Consists of 4 layers—Link, Internet, Transport, and Application. It's a practical model used in real-world networking.
+- **OSI Model**: Consists of 7 layers—Physical, Data Link, Network, Transport, Session, Presentation, and Application. It's a theoretical model used to understand and design network protocols.
+
+### Compare Unicast, Multicast, and Broadcast
+
+- **Unicast**: Communication between a single sender and a single receiver.
+- **Multicast**: Communication from a single sender to a group of interested receivers.
+- **Broadcast**: Communication from a single sender to all devices on the network.
+
+### Compare TCP and UDP
+
+- **TCP (Transmission Control Protocol)**: Connection-oriented, reliable, and ensures data delivery with error checking and correction.
+- **UDP (User Datagram Protocol)**: Connectionless, faster, and does not guarantee data delivery. Suitable for applications where speed is crucial and occasional data loss is acceptable.
+
+### Compare Telnet and SSH
+
+- **Telnet**: An older protocol for remote access. It transmits data in plaintext, making it insecure.
+- **SSH (Secure Shell)**: Provides encrypted remote access. It is more secure than Telnet, as it encrypts data transmitted over the network.
+
+## Virtualization
+
+### Compare PaaS, SaaS, and IaaS
+
+- **PaaS (Platform as a Service)**: Provides a platform allowing customers to develop, run, and manage applications without managing infrastructure.
+- **SaaS (Software as a Service)**: Delivers software applications over the internet, on a subscription basis, with the provider managing the infrastructure.
+- **IaaS (Infrastructure as a Service)**: Provides virtualized computing resources over the internet, including virtual machines, storage, and networks.
+
+### Compare Hypervisor Type 1 and Type 2
+
+- **Type 1 Hypervisor (Bare-Metal)**: Runs directly on the hardware of the host machine. Examples: VMware ESXi, Microsoft Hyper-V.
+- **Type 2 Hypervisor (Hosted)**: Runs on top of an existing operating system. Examples: VMware Workstation, Oracle VirtualBox.
+
+---
